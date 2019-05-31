@@ -1,4 +1,4 @@
-package com.example.algorithm
+package com.example.algorithm.add_two_numbers
 
 import org.junit.Test
 
@@ -21,7 +21,7 @@ import org.junit.Assert.*
 
  */
 
-class ListNode(var `val`: Int) {
+internal class ListNode(var `val`: Int) {
     var next: ListNode? = null
 
     override fun equals(other: Any?): Boolean {
@@ -50,7 +50,7 @@ class ListNode(var `val`: Int) {
     }
 }
 
-class MySolution {
+internal class MySolution2 {
 
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         var result: ListNode? = null
@@ -130,7 +130,7 @@ class MySolution {
 }
 
 
-class AnotherSolution {
+internal class AnotherSolution2 {
     fun another_answer(l1: ListNode?, l2: ListNode?): ListNode? {
         val dummyHead = ListNode(0)
         var p = l1
