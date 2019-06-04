@@ -24,16 +24,15 @@ internal class Solution {
                 !set.contains(it).apply {
                     set.add(it)
                 }
-            }
-                .toMutableList()
-                .let {
-                    it.add(0, c)
-                    it
+            }.toMutableList()
+                .apply {
+                    add(0, c)
                 }.takeIf {
                     it.toSet().size == it.size
                 }.apply {
-                    if(length < this?.size ?: 0) {
-                        length = this?.size ?: 0
+                    val size = this?.size ?: 0
+                    if (length < size) {
+                        length = size
                     }
                 }
         }
