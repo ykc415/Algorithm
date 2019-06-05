@@ -25,7 +25,7 @@ class Solution {
             (index + 1 .. s.length).forEach {
                 val str = s.substring(index, it)
 
-                if(isPalidrome(str)) {
+                if(isPalindrome(str)) {
                     if(result.length < str.length) {
                         result = str
                     }
@@ -36,7 +36,7 @@ class Solution {
         return result
     }
 
-    fun isPalidrome(s: String) : Boolean {
+    fun isPalindrome(s: String) : Boolean {
 
         val isEven = s.length % 2 == 0
 
@@ -53,15 +53,15 @@ class Solution {
         return true
     }
 
-    @Test fun isPalidromeTest1() = assertTrue(isPalidrome("aba"))
+    @Test fun isPalidromeTest1() = assertTrue(isPalindrome("aba"))
 
-    @Test fun isPalidromeTest2() = assertTrue(isPalidrome("a"))
+    @Test fun isPalidromeTest2() = assertTrue(isPalindrome("a"))
 
-    @Test fun isPalidromeTest3() = assertTrue(isPalidrome("abba"))
+    @Test fun isPalidromeTest3() = assertTrue(isPalindrome("abba"))
 
-    @Test fun isPalidromeTest4() = assertFalse(isPalidrome("abc"))
+    @Test fun isPalidromeTest4() = assertFalse(isPalindrome("abc"))
 
-    @Test fun isPalidromeTest5() = assertTrue(isPalidrome("abcba"))
+    @Test fun isPalidromeTest5() = assertTrue(isPalindrome("abcba"))
 
 
     /**
