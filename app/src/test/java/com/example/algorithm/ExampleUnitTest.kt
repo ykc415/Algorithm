@@ -13,5 +13,13 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+
+        (0 .. 3).forEach {
+            println(it)
+        }
+
+        (0 until 3).forEach {
+            println(it)
+        }
     }
 }
