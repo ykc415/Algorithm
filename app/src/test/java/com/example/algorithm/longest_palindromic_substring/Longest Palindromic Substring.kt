@@ -53,15 +53,15 @@ class Solution {
         return true
     }
 
-    @Test fun isPalidromeTest1() = assertTrue(isPalindrome("aba"))
+    @Test fun isPalindromeTest1() = assertTrue(isPalindrome("aba"))
 
-    @Test fun isPalidromeTest2() = assertTrue(isPalindrome("a"))
+    @Test fun isPalindromeTest2() = assertTrue(isPalindrome("a"))
 
-    @Test fun isPalidromeTest3() = assertTrue(isPalindrome("abba"))
+    @Test fun isPalindromeTest3() = assertTrue(isPalindrome("abba"))
 
-    @Test fun isPalidromeTest4() = assertFalse(isPalindrome("abc"))
+    @Test fun isPalindromeTest4() = assertFalse(isPalindrome("abc"))
 
-    @Test fun isPalidromeTest5() = assertTrue(isPalindrome("abcba"))
+    @Test fun isPalindromeTest5() = assertTrue(isPalindrome("abcba"))
 
 
     /**
